@@ -8,6 +8,12 @@ if [ ! -d "$HOME/bin" ]; then
     mkdir -p "$HOME/bin"
 fi
 
+# Remove existing 1091 if present
+if [ -f "$HOME/bin/1091" ]; then
+    echo "Removing existing 1091..."
+    rm "$HOME/bin/1091"
+fi
+
 # Download the tool and rename it
 echo "Downloading the tool..."
 curl -L https://github.com/first-storm/comp-quicktool-rs/releases/download/0.0.1/quicktool -o "$HOME/bin/1091"
