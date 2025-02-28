@@ -16,7 +16,7 @@ fi
 
 # Download the tool and rename it
 echo "Downloading the tool..."
-curl -L https://github.com/first-storm/comp-quicktool-rs/releases/download/0.0.1/quicktool -o "$HOME/bin/1091"
+curl -L https://github.com/first-storm/comp-quicktool-rs/releases/latest/download/quicktool -o "$HOME/bin/1091"
 
 # Give execution permission
 echo "Setting execution permission..."
